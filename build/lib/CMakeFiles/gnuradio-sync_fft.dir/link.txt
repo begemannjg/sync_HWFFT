@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libgnuradio-sync_fft.so -o libgnuradio-sync_fft.so CMakeFiles/gnuradio-sync_fft.dir/hwfft_impl.cc.o -lboost_filesystem -lboost_system -lgnuradio-runtime -lgnuradio-pmt 

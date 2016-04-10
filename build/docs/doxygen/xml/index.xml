@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1sync__fft_1_1hwfft" kind="class"><name>gr::sync_fft::hwfft</name>
+    <member refid="classgr_1_1sync__fft_1_1hwfft_1a9768487d49f80fb885eb7934a2d21ec4" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1sync__fft_1_1hwfft_1a3ceecd79fb08af8d44ae2cde19403a0b" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1sync__fft_1_1hwfft__impl" kind="class"><name>gr::sync_fft::hwfft_impl</name>
+    <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1a114d2c741edee9f3fa434df25ae57844" kind="function"><name>hwfft_impl</name></member>
+    <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1a61348dc1896e634e7e3f95f83002e598" kind="function"><name>~hwfft_impl</name></member>
+    <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1a1e0a5fbff4191a437c4cccd9ee8e009b" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1sync__fft" kind="namespace"><name>gr::sync_fft</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a7aad0e296cc0c674e8c85892ff0424e7" kind="define"><name>SYNC_FFT_API</name></member>
+  </compound>
+  <compound refid="fft_8h" kind="file"><name>fft.h</name>
+    <member refid="fft_8h_1aebdd3f98d0cb9d2af52cd7b34002f04f" kind="define"><name>XPAR_CTRL_AXI_DMA_0_BASEADDR</name></member>
+    <member refid="fft_8h_1a8f2076764074ac11bbbd83269a578f2e" kind="define"><name>XPAR_CTRL_AXI_GPIO_0_BASEADDR</name></member>
+    <member refid="fft_8h_1a154a33c78279a9fa7f7558e65abf387a" kind="define"><name>XPAR_PS7_SCUGIC_0_BASEADDR</name></member>
+    <member refid="fft_8h_1adcbab0629114f29d1e90156b8ab4eeea" kind="define"><name>SOURCE_PADDR</name></member>
+    <member refid="fft_8h_1a0d47182ec1619336f425b3a6e1f94d57" kind="define"><name>DEST_PADDR</name></member>
+    <member refid="fft_8h_1aef5e6652a059839ff6297b8acb2fd158" kind="define"><name>MM2S_CONTROL_REGISTER</name></member>
+    <member refid="fft_8h_1afc288187859b0e79b1ddb0314662f7e3" kind="define"><name>MM2S_STATUS_REGISTER</name></member>
+    <member refid="fft_8h_1a809e6a5066dc46b0eaecfda078fc493c" kind="define"><name>MM2S_START_ADDRESS</name></member>
+    <member refid="fft_8h_1ac59fc4eb25b0db9eee801e17cdde99e1" kind="define"><name>MM2S_LENGTH</name></member>
+    <member refid="fft_8h_1a5e2c617bccdf5adc614a5645e64d2d14" kind="define"><name>S2MM_CONTROL_REGISTER</name></member>
+    <member refid="fft_8h_1a845b270f674df72b8de1330e37ec5842" kind="define"><name>S2MM_STATUS_REGISTER</name></member>
+    <member refid="fft_8h_1a4f409d4dad65722d0cbc04ec8a640163" kind="define"><name>S2MM_DESTINATION_ADDRESS</name></member>
+    <member refid="fft_8h_1a8cb5c7bdc877b1037b66a90d64534214" kind="define"><name>S2MM_LENGTH</name></member>
+    <member refid="fft_8h_1afaa982873e74c5da0978a8fc688915e1" kind="define"><name>MAX_NUM_PTS</name></member>
+    <member refid="fft_8h_1a2e531d999ca9099f96cd0895c867795f" kind="define"><name>BYTES_PER_PT</name></member>
+    <member refid="fft_8h_1a592f701519ce3f0d518c62e8f06f8736" kind="define"><name>FLOATS_PER_PT</name></member>
+    <member refid="fft_8h_1af3f5bfad38d178fb72c6a6222aa7606c" kind="define"><name>DMA_MAP_SIZE</name></member>
+    <member refid="fft_8h_1a9542a6000bf702bcd6cc746a6ea288a5" kind="define"><name>GPIO_MAP_SIZE</name></member>
+    <member refid="fft_8h_1a6b20d41d6252e9871430c242cb1a56e7" kind="define"><name>BUFFER_SIZE</name></member>
+    <member refid="fft_8h_1a8069d8d9bc4bcbdb56a6099429a31657" kind="define"><name>DMA_RESET</name></member>
+    <member refid="fft_8h_1a0497871a8327e889a36f92322a0af717" kind="define"><name>PTS_SHIFT</name></member>
+    <member refid="fft_8h_1a47519dc140d04e33f18ffc0144b5eaf4" kind="define"><name>DIRECTION_SHIFT</name></member>
+    <member refid="fft_8h_1a1d03185316b71651dbc45faa193d76d6" kind="define"><name>SCALE_SHIFT</name></member>
+    <member refid="fft_8h_1a3018c7600b7bb9866400596a56a57af7" kind="define"><name>START</name></member>
+    <member refid="fft_8h_1a9c21a7caee326d7803b94ae1952b27ca" kind="define"><name>IDLE</name></member>
+    <member refid="fft_8h_1a70c94c48ced3c89f495796218ef16a6a" kind="define"><name>FFT_SUCCESS</name></member>
+    <member refid="fft_8h_1adef3651ec7f084fc7cc96f63a99f2652" kind="define"><name>MMAP_FAILURE</name></member>
+    <member refid="fft_8h_1a7b99dc172b349ef5d8c475d148d8924f" kind="define"><name>OPEN_MEM_FAILURE</name></member>
+    <member refid="fft_8h_1a10728824d81491d78d81ac9f30a28538" kind="function"><name>write_vaddr</name></member>
+    <member refid="fft_8h_1a2e5dd19acebcaf96fdfbdb03d64d52ba" kind="function"><name>read_vaddr</name></member>
+    <member refid="fft_8h_1a42df2e3845597d7d5fba4c236f51f39f" kind="function"><name>dma_s2mm_status</name></member>
+    <member refid="fft_8h_1ae6b8102d0e57febad707e99ea2f3b642" kind="function"><name>dma_mm2s_status</name></member>
+    <member refid="fft_8h_1a81bed0d9226ee33478b146e2e8278ade" kind="function"><name>fft</name></member>
+    <member refid="fft_8h_1a88a05c0d202ca0b1ebc4acc4ac5997d6" kind="function"><name>log2ofX</name></member>
+  </compound>
+  <compound refid="lib_2fft_8h" kind="file"><name>lib/fft.h</name>
+    <member refid="lib_2fft_8h_1aebdd3f98d0cb9d2af52cd7b34002f04f" kind="define"><name>XPAR_CTRL_AXI_DMA_0_BASEADDR</name></member>
+    <member refid="lib_2fft_8h_1a8f2076764074ac11bbbd83269a578f2e" kind="define"><name>XPAR_CTRL_AXI_GPIO_0_BASEADDR</name></member>
+    <member refid="lib_2fft_8h_1a154a33c78279a9fa7f7558e65abf387a" kind="define"><name>XPAR_PS7_SCUGIC_0_BASEADDR</name></member>
+    <member refid="lib_2fft_8h_1adcbab0629114f29d1e90156b8ab4eeea" kind="define"><name>SOURCE_PADDR</name></member>
+    <member refid="lib_2fft_8h_1a0d47182ec1619336f425b3a6e1f94d57" kind="define"><name>DEST_PADDR</name></member>
+    <member refid="lib_2fft_8h_1aef5e6652a059839ff6297b8acb2fd158" kind="define"><name>MM2S_CONTROL_REGISTER</name></member>
+    <member refid="lib_2fft_8h_1afc288187859b0e79b1ddb0314662f7e3" kind="define"><name>MM2S_STATUS_REGISTER</name></member>
+    <member refid="lib_2fft_8h_1a809e6a5066dc46b0eaecfda078fc493c" kind="define"><name>MM2S_START_ADDRESS</name></member>
+    <member refid="lib_2fft_8h_1ac59fc4eb25b0db9eee801e17cdde99e1" kind="define"><name>MM2S_LENGTH</name></member>
+    <member refid="lib_2fft_8h_1a5e2c617bccdf5adc614a5645e64d2d14" kind="define"><name>S2MM_CONTROL_REGISTER</name></member>
+    <member refid="lib_2fft_8h_1a845b270f674df72b8de1330e37ec5842" kind="define"><name>S2MM_STATUS_REGISTER</name></member>
+    <member refid="lib_2fft_8h_1a4f409d4dad65722d0cbc04ec8a640163" kind="define"><name>S2MM_DESTINATION_ADDRESS</name></member>
+    <member refid="lib_2fft_8h_1a8cb5c7bdc877b1037b66a90d64534214" kind="define"><name>S2MM_LENGTH</name></member>
+    <member refid="lib_2fft_8h_1afaa982873e74c5da0978a8fc688915e1" kind="define"><name>MAX_NUM_PTS</name></member>
+    <member refid="lib_2fft_8h_1a2e531d999ca9099f96cd0895c867795f" kind="define"><name>BYTES_PER_PT</name></member>
+    <member refid="lib_2fft_8h_1a592f701519ce3f0d518c62e8f06f8736" kind="define"><name>FLOATS_PER_PT</name></member>
+    <member refid="lib_2fft_8h_1af3f5bfad38d178fb72c6a6222aa7606c" kind="define"><name>DMA_MAP_SIZE</name></member>
+    <member refid="lib_2fft_8h_1a9542a6000bf702bcd6cc746a6ea288a5" kind="define"><name>GPIO_MAP_SIZE</name></member>
+    <member refid="lib_2fft_8h_1a6b20d41d6252e9871430c242cb1a56e7" kind="define"><name>BUFFER_SIZE</name></member>
+    <member refid="lib_2fft_8h_1a8069d8d9bc4bcbdb56a6099429a31657" kind="define"><name>DMA_RESET</name></member>
+    <member refid="lib_2fft_8h_1a0497871a8327e889a36f92322a0af717" kind="define"><name>PTS_SHIFT</name></member>
+    <member refid="lib_2fft_8h_1a47519dc140d04e33f18ffc0144b5eaf4" kind="define"><name>DIRECTION_SHIFT</name></member>
+    <member refid="lib_2fft_8h_1a1d03185316b71651dbc45faa193d76d6" kind="define"><name>SCALE_SHIFT</name></member>
+    <member refid="lib_2fft_8h_1a3018c7600b7bb9866400596a56a57af7" kind="define"><name>START</name></member>
+    <member refid="lib_2fft_8h_1a9c21a7caee326d7803b94ae1952b27ca" kind="define"><name>IDLE</name></member>
+    <member refid="lib_2fft_8h_1a70c94c48ced3c89f495796218ef16a6a" kind="define"><name>FFT_SUCCESS</name></member>
+    <member refid="lib_2fft_8h_1adef3651ec7f084fc7cc96f63a99f2652" kind="define"><name>MMAP_FAILURE</name></member>
+    <member refid="lib_2fft_8h_1a7b99dc172b349ef5d8c475d148d8924f" kind="define"><name>OPEN_MEM_FAILURE</name></member>
+    <member refid="lib_2fft_8h_1a10728824d81491d78d81ac9f30a28538" kind="function"><name>write_vaddr</name></member>
+    <member refid="lib_2fft_8h_1a2e5dd19acebcaf96fdfbdb03d64d52ba" kind="function"><name>read_vaddr</name></member>
+    <member refid="lib_2fft_8h_1a42df2e3845597d7d5fba4c236f51f39f" kind="function"><name>dma_s2mm_status</name></member>
+    <member refid="lib_2fft_8h_1ae6b8102d0e57febad707e99ea2f3b642" kind="function"><name>dma_mm2s_status</name></member>
+    <member refid="lib_2fft_8h_1a81bed0d9226ee33478b146e2e8278ade" kind="function"><name>fft</name></member>
+    <member refid="lib_2fft_8h_1a88a05c0d202ca0b1ebc4acc4ac5997d6" kind="function"><name>log2ofX</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="hwfft_8h" kind="file"><name>hwfft.h</name>
+  </compound>
+  <compound refid="hwfft__impl_8h" kind="file"><name>hwfft_impl.h</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_e1bbc9d00b188d1878a947c9e7b8a1a7" kind="dir"><name>sync_fft</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

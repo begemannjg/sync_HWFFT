@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio SYNC_FFT C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the SYNC_FFT GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+

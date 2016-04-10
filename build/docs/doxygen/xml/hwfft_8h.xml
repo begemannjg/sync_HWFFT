@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="hwfft_8h" kind="file" language="C++">
+    <compoundname>hwfft.h</compoundname>
+    <includes refid="api_8h" local="no">sync_fft/api.h</includes>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <includedby refid="hwfft__impl_8h" local="no">hwfft_impl.h</includedby>
+    <incdepgraph>
+      <node id="16">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="15">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="13">
+        <label>hwfft.h</label>
+        <link refid="hwfft.h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>sync_fft/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="18">
+        <label>hwfft_impl.h</label>
+        <link refid="hwfft__impl_8h"/>
+      </node>
+      <node id="17">
+        <label>hwfft.h</label>
+        <link refid="hwfft.h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1sync__fft_1_1hwfft" prot="public">gr::sync_fft::hwfft</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1sync__fft">gr::sync_fft</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alarm/jbworkspace/gr-sync_fft/include/sync_fft/hwfft.h"/>
+  </compounddef>
+</doxygen>

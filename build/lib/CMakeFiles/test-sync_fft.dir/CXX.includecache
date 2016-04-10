@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alarm/jbworkspace/gr-sync_fft/lib/qa_sync_fft.cc
+qa_sync_fft.h
+/home/alarm/jbworkspace/gr-sync_fft/lib/qa_sync_fft.h
+
+/home/alarm/jbworkspace/gr-sync_fft/lib/qa_sync_fft.h
+gnuradio/attributes.h
+-
+cppunit/TestSuite.h
+-
+
+/home/alarm/jbworkspace/gr-sync_fft/lib/test_sync_fft.cc
+config.h
+/home/alarm/jbworkspace/gr-sync_fft/lib/config.h
+cppunit/TextTestRunner.h
+-
+cppunit/XmlOutputter.h
+-
+gnuradio/unittests.h
+-
+qa_sync_fft.h
+/home/alarm/jbworkspace/gr-sync_fft/lib/qa_sync_fft.h
+iostream
+-
+fstream
+-
+

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_e1bbc9d00b188d1878a947c9e7b8a1a7" kind="dir">
+    <compoundname>sync_fft</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="hwfft_8h">hwfft.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alarm/jbworkspace/gr-sync_fft/include/sync_fft/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<block>
+  <name>HW Accel. FFT</name>
+  <key>sync_fft_hwfft</key>
+  <category>sync_fft</category>
+  <import>import sync_fft</import>
+  <make>sync_fft.hwfft($fft_size, $direction)</make>
+
+  <param>
+    <name>FFT_Size</name>
+		<key>fft_size</key>
+					<type>int</type>
+  </param>
+  
+  <param>
+	<name>Forward/Reverse</name>
+		<key>direction</key>
+				<type>int</type>
+			
+<!--			<type>enum</type>
+		<option>
+				<name>forward</name>
+						<key>true</key>
+							<value>1</value>
+		</option>
+		<option>
+				<name>reverse</name>
+					<key>false</key>
+						<value>0</value>
+		</option>
+		-->
+	</param>
+	
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
