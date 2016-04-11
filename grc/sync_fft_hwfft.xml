@@ -34,9 +34,11 @@
   <sink>
     <name>in</name>
     <type>float</type>
+    <nports>MAX_IN</nports>
   </sink>
   <source>
     <name>out</name>
     <type>float</type>
+    <nports>MAX_OUT</nports>
   </source>
 </block>

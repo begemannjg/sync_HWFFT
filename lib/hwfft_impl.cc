@@ -23,6 +23,8 @@
 #endif
 
 #include <gnuradio/io_signature.h>
+#include <iostream>
+#include <cstdio>
 #include "hwfft_impl.h"
 #include "fft.c"
 static const int MIN_IN = 1;	// mininum number of input streams
@@ -48,7 +50,6 @@ namespace gr {
             gr::io_signature::make(MIN_IN, MAX_IN, sizeof(float)), //float input
             gr::io_signature::make(MIN_OUT, MAX_OUT, sizeof(float))) //float output
     {}
-
     /*
      * Our virtual destructor.
      */
@@ -61,14 +62,16 @@ namespace gr {
         gr_vector_const_void_star &input_items,
         gr_vector_void_star &output_items)
     {
-      const float *in = (const float *) input_items[0];
+      float *in = (float *) input_items[0];
       float *out = (float *) output_items[0];
-	  const int scale = 1;
+	  const int fft_size=8192, direction=1, scale = 1;
+	  int retval;
       // Do <+signal processing+>
       for(int i = 0; i < noutput_items; i++)
       {
 		  //int retval=fft((float*) in, (float *) out, fft_size, direction, scale);
-              out[i] = in[i];
+             retval=fft(in, out, fft_size, direction, scale);
+			 printf("Return=%d", retval);
       }
       
 	/*printf("FFT SIZE %d\n", fft_size);
