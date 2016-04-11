@@ -70,8 +70,8 @@ namespace gr {
       for(int i = 0; i < noutput_items; i++)
       {
 		  //int retval=fft((float*) in, (float *) out, fft_size, direction, scale);
-             retval=fft(in, out, fft_size, direction, scale);
-			 printf("Return=%d", retval);
+             fft(in, out, fft_size, direction, scale);
+			 printf("Return=%d\n", retval);
       }
       
 	/*printf("FFT SIZE %d\n", fft_size);
