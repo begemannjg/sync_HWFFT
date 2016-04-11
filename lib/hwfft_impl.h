@@ -29,6 +29,7 @@ namespace gr {
     class hwfft_impl : public hwfft
     {
      private:
+		int fftsizeIN, dirIN, scaleIN;
       // Nothing to declare in this block.
 
      public:
