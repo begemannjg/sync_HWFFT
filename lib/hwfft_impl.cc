@@ -68,11 +68,11 @@ namespace gr {
 	  
       // Do signal processing for N output
       for(int i = 0; i < noutput_items; i++) {
-		fft(in, out, fftsizeIN, dirIN, 1); 
-			printf("Return = %d\n", retval); //return 0 for succesful and 2 for mmap failures
-			printf("FFT SIZE %d\n", fftsizeIN);
-			printf("DIRECTION %d\n", dirIN);
-			printf("SCALE %d\n", scaleIN); 
+		fft(in, out, fftsizeIN, dirIN, scaleIN); 
+			//printf("Return = %d\n", retval); //return 0 for succesful and 2 for mmap failures
+			//printf("FFT SIZE %d\n", fftsizeIN);
+			//printf("DIRECTION %d\n", dirIN);
+			//printf("SCALE %d\n", scaleIN); 
       }//end loop
 	
       // Tell runtime system how many output items we produced.
