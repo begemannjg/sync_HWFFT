@@ -4511,6 +4511,20 @@ SWIG_AsVal_int (PyObject * obj, int *val)
 }
 
 
+SWIGINTERN int
+SWIG_AsVal_bool (PyObject *obj, bool *val)
+{
+  int r;
+  if (!PyBool_Check(obj))
+    return SWIG_ERROR;
+  r = PyObject_IsTrue(obj);
+  if (r == -1)
+    return SWIG_ERROR;
+  if (val) *val = r ? true : false;
+  return SWIG_OK;
+}
+
+
 SWIGINTERNINLINE PyObject*
   SWIG_From_unsigned_SS_int  (unsigned int value)
 {
@@ -5084,32 +5098,41 @@ fail:
 SWIGINTERN PyObject *_wrap_hwfft_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   int arg1 ;
-  int arg2 ;
+  bool arg2 ;
+  int arg3 ;
   int val1 ;
   int ecode1 = 0 ;
-  int val2 ;
+  bool val2 ;
   int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
   char *  kwnames[] = {
-    (char *) "fft_size",(char *) "direction", NULL 
+    (char *) "fft_size",(char *) "direction",(char *) "scale", NULL 
   };
   gr::sync_fft::hwfft::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:hwfft_make",kwnames,&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:hwfft_make",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
   ecode1 = SWIG_AsVal_int(obj0, &val1);
   if (!SWIG_IsOK(ecode1)) {
     SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "hwfft_make" "', argument " "1"" of type '" "int""'");
   } 
   arg1 = static_cast< int >(val1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "hwfft_make" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "hwfft_make" "', argument " "2"" of type '" "bool""'");
   } 
-  arg2 = static_cast< int >(val2);
+  arg2 = static_cast< bool >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "hwfft_make" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
   {
     try {
-      result = gr::sync_fft::hwfft::make(arg1,arg2);
+      result = gr::sync_fft::hwfft::make(arg1,arg2,arg3);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5325,22 +5348,26 @@ SWIGINTERN PyObject *_wrap_hwfft_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObj
   PyObject *resultobj = 0;
   boost::shared_ptr< gr::sync_fft::hwfft > *arg1 = (boost::shared_ptr< gr::sync_fft::hwfft > *) 0 ;
   int arg2 ;
-  int arg3 ;
+  bool arg3 ;
+  int arg4 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val3 ;
+  bool val3 ;
   int ecode3 = 0 ;
+  int val4 ;
+  int ecode4 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
   char *  kwnames[] = {
-    (char *) "self",(char *) "fft_size",(char *) "direction", NULL 
+    (char *) "self",(char *) "fft_size",(char *) "direction",(char *) "scale", NULL 
   };
   gr::sync_fft::hwfft::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:hwfft_sptr_make",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:hwfft_sptr_make",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sync_fft__hwfft_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "hwfft_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::sync_fft::hwfft > *""'"); 
@@ -5351,14 +5378,19 @@ SWIGINTERN PyObject *_wrap_hwfft_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObj
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "hwfft_sptr_make" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  ecode3 = SWIG_AsVal_bool(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "hwfft_sptr_make" "', argument " "3"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "hwfft_sptr_make" "', argument " "3"" of type '" "bool""'");
   } 
-  arg3 = static_cast< int >(val3);
+  arg3 = static_cast< bool >(val3);
+  ecode4 = SWIG_AsVal_int(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "hwfft_sptr_make" "', argument " "4"" of type '" "int""'");
+  } 
+  arg4 = static_cast< int >(val4);
   {
     try {
-      result = (*arg1)->make(arg2,arg3);
+      result = (*arg1)->make(arg2,arg3,arg4);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -8280,13 +8312,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"high_res_timer_tps", _wrap_high_res_timer_tps, METH_VARARGS, (char *)"high_res_timer_tps() -> gr::high_res_timer_type"},
 	 { (char *)"high_res_timer_epoch", _wrap_high_res_timer_epoch, METH_VARARGS, (char *)"high_res_timer_epoch() -> gr::high_res_timer_type"},
 	 { (char *)"hwfft_make", (PyCFunction) _wrap_hwfft_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"hwfft_make(int fft_size, int direction) -> hwfft_sptr\n"
+		"hwfft_make(int fft_size, bool direction, int scale) -> hwfft_sptr\n"
 		"\n"
 		"Return a shared_ptr to a new instance of sync_fft::hwfft.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, sync_fft::hwfft's constructor is in a private implementation class. sync_fft::hwfft::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (fft_size, direction)\n"
+		"Params: (fft_size, direction, scale)\n"
 		""},
 	 { (char *)"delete_hwfft", _wrap_delete_hwfft, METH_VARARGS, (char *)"delete_hwfft(hwfft self)"},
 	 { (char *)"hwfft_swigregister", hwfft_swigregister, METH_VARARGS, NULL},
@@ -8297,13 +8329,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"hwfft_sptr___deref__", _wrap_hwfft_sptr___deref__, METH_VARARGS, (char *)"hwfft_sptr___deref__(hwfft_sptr self) -> hwfft"},
 	 { (char *)"delete_hwfft_sptr", _wrap_delete_hwfft_sptr, METH_VARARGS, (char *)"delete_hwfft_sptr(hwfft_sptr self)"},
 	 { (char *)"hwfft_sptr_make", (PyCFunction) _wrap_hwfft_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"hwfft_sptr_make(hwfft_sptr self, int fft_size, int direction) -> hwfft_sptr\n"
+		"hwfft_sptr_make(hwfft_sptr self, int fft_size, bool direction, int scale) -> hwfft_sptr\n"
 		"\n"
 		"Return a shared_ptr to a new instance of sync_fft::hwfft.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, sync_fft::hwfft's constructor is in a private implementation class. sync_fft::hwfft::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (fft_size, direction)\n"
+		"Params: (fft_size, direction, scale)\n"
 		""},
 	 { (char *)"hwfft_sptr_history", _wrap_hwfft_sptr_history, METH_VARARGS, (char *)"hwfft_sptr_history(hwfft_sptr self) -> unsigned int"},
 	 { (char *)"hwfft_sptr_declare_sample_delay", _wrap_hwfft_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"

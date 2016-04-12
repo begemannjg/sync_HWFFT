@@ -46,7 +46,7 @@ namespace gr {
        * class. sync_fft::hwfft::make is the public interface for
        * creating new instances.
        */
-      static sptr make(int fft_size, int direction);
+      static sptr make(int fft_size, bool direction, int scale);
     };
 
   } // namespace sync_fft

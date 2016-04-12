@@ -21,23 +21,27 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classgr_1_1sync__fft_1_1hwfft_1a3ceecd79fb08af8d44ae2cde19403a0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1sync__fft_1_1hwfft_1adc884a624241ee6f7296eb4b36f4face" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classgr_1_1sync__fft_1_1hwfft_1a9768487d49f80fb885eb7934a2d21ec4" kindref="member">sptr</ref></type>
         <definition>static sptr gr::sync_fft::hwfft::make</definition>
-        <argsstring>(int fft_size, int direction)</argsstring>
+        <argsstring>(int fft_size, bool direction, int scale)</argsstring>
         <name>make</name>
         <param>
           <type>int</type>
           <declname>fft_size</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>bool</type>
           <declname>direction</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
         </param>
         <briefdescription>
 <para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1sync__fft_1_1hwfft" kindref="compound">sync_fft::hwfft</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1sync__fft_1_1hwfft" kindref="compound">sync_fft::hwfft</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1sync__fft_1_1hwfft_1a3ceecd79fb08af8d44ae2cde19403a0b" kindref="member">sync_fft::hwfft::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1sync__fft_1_1hwfft" kindref="compound">sync_fft::hwfft</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1sync__fft_1_1hwfft_1adc884a624241ee6f7296eb4b36f4face" kindref="member">sync_fft::hwfft::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/alarm/jbworkspace/gr-sync_fft/include/sync_fft/hwfft.h" line="49" column="1"/>
@@ -77,7 +81,7 @@
     </collaborationgraph>
     <location file="/home/alarm/jbworkspace/gr-sync_fft/include/sync_fft/hwfft.h" line="37" column="1" bodyfile="/home/alarm/jbworkspace/gr-sync_fft/include/sync_fft/hwfft.h" bodystart="36" bodyend="50"/>
     <listofallmembers>
-      <member refid="classgr_1_1sync__fft_1_1hwfft_1a3ceecd79fb08af8d44ae2cde19403a0b" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft</scope><name>make</name></member>
+      <member refid="classgr_1_1sync__fft_1_1hwfft_1adc884a624241ee6f7296eb4b36f4face" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft</scope><name>make</name></member>
       <member refid="classgr_1_1sync__fft_1_1hwfft_1a9768487d49f80fb885eb7934a2d21ec4" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft</scope><name>sptr</name></member>
     </listofallmembers>
   </compounddef>

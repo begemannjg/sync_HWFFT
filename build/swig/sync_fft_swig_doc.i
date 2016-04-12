@@ -14,4 +14,4 @@
 
 To avoid accidental use of raw pointers, sync_fft::hwfft's constructor is in a private implementation class. sync_fft::hwfft::make is the public interface for creating new instances.
 
-Params: (fft_size, direction)"
+Params: (fft_size, direction, scale)"

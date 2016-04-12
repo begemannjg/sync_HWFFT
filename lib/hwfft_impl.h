@@ -33,7 +33,7 @@ namespace gr {
       // Nothing to declare in this block.
 
      public:
-      hwfft_impl(int fft_size, int direction);
+      hwfft_impl(int fft_size, bool direction, int scale);
       ~hwfft_impl();
 
       // Where all the action really happens

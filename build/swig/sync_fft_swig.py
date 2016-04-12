@@ -124,17 +124,17 @@ class hwfft(object):
         raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
 
-    def make(fft_size, direction):
+    def make(fft_size, direction, scale):
         """
-        make(int fft_size, int direction) -> hwfft_sptr
+        make(int fft_size, bool direction, int scale) -> hwfft_sptr
 
         Return a shared_ptr to a new instance of sync_fft::hwfft.
 
         To avoid accidental use of raw pointers, sync_fft::hwfft's constructor is in a private implementation class. sync_fft::hwfft::make is the public interface for creating new instances.
 
-        Params: (fft_size, direction)
+        Params: (fft_size, direction, scale)
         """
-        return _sync_fft_swig.hwfft_make(fft_size, direction)
+        return _sync_fft_swig.hwfft_make(fft_size, direction, scale)
 
     make = staticmethod(make)
     __swig_destroy__ = _sync_fft_swig.delete_hwfft
@@ -142,17 +142,17 @@ class hwfft(object):
 hwfft_swigregister = _sync_fft_swig.hwfft_swigregister
 hwfft_swigregister(hwfft)
 
-def hwfft_make(fft_size, direction):
+def hwfft_make(fft_size, direction, scale):
     """
-    hwfft_make(int fft_size, int direction) -> hwfft_sptr
+    hwfft_make(int fft_size, bool direction, int scale) -> hwfft_sptr
 
     Return a shared_ptr to a new instance of sync_fft::hwfft.
 
     To avoid accidental use of raw pointers, sync_fft::hwfft's constructor is in a private implementation class. sync_fft::hwfft::make is the public interface for creating new instances.
 
-    Params: (fft_size, direction)
+    Params: (fft_size, direction, scale)
     """
-    return _sync_fft_swig.hwfft_make(fft_size, direction)
+    return _sync_fft_swig.hwfft_make(fft_size, direction, scale)
 
 class hwfft_sptr(object):
     """Proxy of C++ boost::shared_ptr<(gr::sync_fft::hwfft)> class."""
@@ -178,17 +178,17 @@ class hwfft_sptr(object):
     __swig_destroy__ = _sync_fft_swig.delete_hwfft_sptr
     __del__ = lambda self: None
 
-    def make(self, fft_size, direction):
+    def make(self, fft_size, direction, scale):
         """
-        make(hwfft_sptr self, int fft_size, int direction) -> hwfft_sptr
+        make(hwfft_sptr self, int fft_size, bool direction, int scale) -> hwfft_sptr
 
         Return a shared_ptr to a new instance of sync_fft::hwfft.
 
         To avoid accidental use of raw pointers, sync_fft::hwfft's constructor is in a private implementation class. sync_fft::hwfft::make is the public interface for creating new instances.
 
-        Params: (fft_size, direction)
+        Params: (fft_size, direction, scale)
         """
-        return _sync_fft_swig.hwfft_sptr_make(self, fft_size, direction)
+        return _sync_fft_swig.hwfft_sptr_make(self, fft_size, direction, scale)
 
 
     def history(self):

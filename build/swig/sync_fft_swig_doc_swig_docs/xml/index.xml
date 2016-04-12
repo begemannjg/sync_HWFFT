@@ -2,7 +2,7 @@
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
   <compound refid="classgr_1_1sync__fft_1_1hwfft" kind="class"><name>gr::sync_fft::hwfft</name>
     <member refid="classgr_1_1sync__fft_1_1hwfft_1a9768487d49f80fb885eb7934a2d21ec4" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1sync__fft_1_1hwfft_1a3ceecd79fb08af8d44ae2cde19403a0b" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1sync__fft_1_1hwfft_1adc884a624241ee6f7296eb4b36f4face" kind="function"><name>make</name></member>
   </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>

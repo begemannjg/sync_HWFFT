@@ -39,8 +39,6 @@ config.h
 /home/alarm/jbworkspace/gr-sync_fft/lib/config.h
 gnuradio/io_signature.h
 -
-iostream
--
 cstdio
 -
 hwfft_impl.h

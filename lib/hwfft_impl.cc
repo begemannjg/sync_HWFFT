@@ -23,7 +23,6 @@
 #endif
 
 #include <gnuradio/io_signature.h>
-#include <iostream>
 #include <cstdio>
 #include "hwfft_impl.h"
 #include "fft.c"
@@ -31,25 +30,25 @@ static const int MIN_IN = 1;	// mininum number of input streams
 static const int MAX_IN = 1;	// maximum number of input streams
 static const int MIN_OUT = 1;	// minimum number of output streams
 static const int MAX_OUT = 1;	// maximum number of output streams
-using namespace std;
+
 namespace gr {
   namespace sync_fft {
 
     hwfft::sptr
-    hwfft::make(int fft_size, int direction)
+    hwfft::make(int fft_size, bool direction, int scale)
     {
       return gnuradio::get_initial_sptr
-        (new hwfft_impl(fft_size, direction));
+        (new hwfft_impl(fft_size, direction, scale));
     }
 
     /*
      * The private constructor
      */
-    hwfft_impl::hwfft_impl(int fft_size, int direction)
+    hwfft_impl::hwfft_impl(int fft_size, bool direction, int scale)
       : gr::sync_block("hwfft",
             gr::io_signature::make(MIN_IN, MAX_IN, sizeof(float)), //float input
             gr::io_signature::make(MIN_OUT, MAX_OUT, sizeof(float))), //float output
-			fftsizeIN(fft_size), dirIN(direction) //get user input and save for input to function
+			fftsizeIN(fft_size), dirIN((int)direction), scaleIN(scale) //get user input and save for input to function
     {}
     /*
      * Our virtual destructor.
@@ -69,14 +68,12 @@ namespace gr {
 	  
       // Do signal processing for N output
       for(int i = 0; i < noutput_items; i++) {
-             fft(in, out, fftsizeIN, dirIN, 1); //need to add scaling factor
-			// printf("Return=%d\n", retval);
-			std::cout << "Return= "<< retval << endl; //return 0 for succesful and 2 for mmap failures
-      }
-      
-	printf("FFT SIZE %d\n", fftsizeIN);
-	printf("DIRECTION %d\n", dirIN);
-	printf("SCALE %d\n", scaleIN); 
+		fft(in, out, fftsizeIN, dirIN, 1); 
+			printf("Return = %d\n", retval); //return 0 for succesful and 2 for mmap failures
+			printf("FFT SIZE %d\n", fftsizeIN);
+			printf("DIRECTION %d\n", dirIN);
+			printf("SCALE %d\n", scaleIN); 
+      }//end loop
 	
       // Tell runtime system how many output items we produced.
       return noutput_items;

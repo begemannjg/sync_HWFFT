@@ -4,19 +4,64 @@
     <compoundname>gr::sync_fft::hwfft_impl</compoundname>
     <basecompoundref refid="classgr_1_1sync__fft_1_1hwfft" prot="public" virt="non-virtual">gr::sync_fft::hwfft</basecompoundref>
     <includes refid="hwfft__impl_8h" local="no">hwfft_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1sync__fft_1_1hwfft__impl_1af1701eb6bb54060f5087167938d34ee9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::sync_fft::hwfft_impl::fftsizeIN</definition>
+        <argsstring></argsstring>
+        <name>fftsizeIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="32" column="1" bodyfile="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1sync__fft_1_1hwfft__impl_1a33902a5e3f012af7b8583600bd467aaa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::sync_fft::hwfft_impl::dirIN</definition>
+        <argsstring></argsstring>
+        <name>dirIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="32" column="1" bodyfile="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1sync__fft_1_1hwfft__impl_1a193914312d73b20e1cb8ec5917348b0c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::sync_fft::hwfft_impl::scaleIN</definition>
+        <argsstring></argsstring>
+        <name>scaleIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="32" column="1" bodyfile="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classgr_1_1sync__fft_1_1hwfft__impl_1a114d2c741edee9f3fa434df25ae57844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1sync__fft_1_1hwfft__impl_1aa838f547d8fbfcf50cd30340bcdd0f25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>gr::sync_fft::hwfft_impl::hwfft_impl</definition>
-        <argsstring>(int fft_size, int direction)</argsstring>
+        <argsstring>(int fft_size, bool direction, int scale)</argsstring>
         <name>hwfft_impl</name>
         <param>
           <type>int</type>
           <declname>fft_size</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>bool</type>
           <declname>direction</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -24,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="35" column="1"/>
+        <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="36" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1sync__fft_1_1hwfft__impl_1a61348dc1896e634e7e3f95f83002e598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -37,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="36" column="1"/>
+        <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="37" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1sync__fft_1_1hwfft__impl_1a1e0a5fbff4191a437c4cccd9ee8e009b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -62,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="39" column="1"/>
+        <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="40" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -103,10 +148,13 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="30" column="1" bodyfile="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" bodystart="29" bodyend="42"/>
+    <location file="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" line="30" column="1" bodyfile="/home/alarm/jbworkspace/gr-sync_fft/lib/hwfft_impl.h" bodystart="29" bodyend="43"/>
     <listofallmembers>
-      <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1a114d2c741edee9f3fa434df25ae57844" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>hwfft_impl</name></member>
-      <member refid="classgr_1_1sync__fft_1_1hwfft_1a3ceecd79fb08af8d44ae2cde19403a0b" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1a33902a5e3f012af7b8583600bd467aaa" prot="private" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>dirIN</name></member>
+      <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1af1701eb6bb54060f5087167938d34ee9" prot="private" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>fftsizeIN</name></member>
+      <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1aa838f547d8fbfcf50cd30340bcdd0f25" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>hwfft_impl</name></member>
+      <member refid="classgr_1_1sync__fft_1_1hwfft_1adc884a624241ee6f7296eb4b36f4face" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1a193914312d73b20e1cb8ec5917348b0c" prot="private" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>scaleIN</name></member>
       <member refid="classgr_1_1sync__fft_1_1hwfft_1a9768487d49f80fb885eb7934a2d21ec4" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>sptr</name></member>
       <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1a1e0a5fbff4191a437c4cccd9ee8e009b" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>work</name></member>
       <member refid="classgr_1_1sync__fft_1_1hwfft__impl_1a61348dc1896e634e7e3f95f83002e598" prot="public" virt="non-virtual"><scope>gr::sync_fft::hwfft_impl</scope><name>~hwfft_impl</name></member>

@@ -4,39 +4,35 @@
   <key>sync_fft_hwfft</key>
   <category>sync_fft</category>
   <import>import sync_fft</import>
-  <make>sync_fft.hwfft($fft_size, $direction)</make>
+  <make>sync_fft.hwfft($fft_size, $direction, $scale)</make>
 
   <param>
     <name>FFT_Size</name>
 		<key>fft_size</key>
+				<value>1024</value>
 					<type>int</type>
   </param>
   
   <param>
 	<name>Forward/Reverse</name>
 		<key>direction</key>
-				<type>int</type>
-			
-<!--			<type>enum</type>
+			<type>enum</type>
 		<option>
-				<name>forward</name>
-						<key>true</key>
-							<value>1</value>
+			<name>forward</name>
+				<key>True</key>	
 		</option>
 		<option>
-				<name>reverse</name>
-					<key>false</key>
-						<value>0</value>
+			<name>reverse</name>
+				<key>False</key>
 		</option>
-		-->
 	</param>
 	
-<!--
-	<param>Scale</param>
+	<param>
+		<name>Scale</name>
 		<key>scale</key>
 			<type>int</type>
+	</param>
 	
--->
   <sink>
     <name>in</name>
     <type>float</type>
